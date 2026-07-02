@@ -53,13 +53,17 @@ lib/
    flutter pub get
    ```
 
-3. **Add your own WeatherAPI.com key**
-   Get a free key at [weatherapi.com](https://www.weatherapi.com/) and set it in `lib/services/weather_service.dart`.
+3. **Add your API key**
+   Create a `secrets.json` file in the project root:
+```json
+   { "NEWS_API_KEY": "your-newsapi.org-key" }
+```
+   Get a free key at [newsapi.org](https://newsapi.org/).
 
 4. **Run the app**
-   ```bash
-   flutter run
-   ```
+```bash
+   flutter run --dart-define-from-file=secrets.json
+```
 
 ## Author
 
